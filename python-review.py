@@ -1,6 +1,6 @@
 def create_youtube_video(title,description):
 
-	video = {"title":title,"description":description,"likes":0,"dislikes":0,"comments":{}}
+	video = {"title":title,"description":description,"likes":0,"dislikes":0,"comments":{},"hashtag":{}}
 	return video
 
 def likes (video):
@@ -24,6 +24,7 @@ def add_comment (youtubevideo,username,comment_text):
 	return youtubevideo
 
 x = create_youtube_video("ghgh","tytyty")
+y= likes(dislikes(create_youtube_video("ghgh","tytyty")))
 
 print(dislikes(likes(add_comment(x,"yazan","tt"))))
 
@@ -32,3 +33,12 @@ for i in range(496):
 	likes(x)
 
 print(x)
+
+def similarity_to_video (x,y)
+{
+	
+}
+
+
+
+
